@@ -29,3 +29,4 @@ Die Agenten selbst liegen nicht mehr in diesem Repo, sondern in der Agenten-Samm
 | Datei | Inhalt |
 | --- | --- |
 | [tramadol-pharmakologie-ssri.md](tramadol-pharmakologie-ssri.md) | Tramadol: Rezeptorprofil, CYP2D6-Metabolismus und Wechselwirkungen mit SSRIs (Serotoninsyndrom, Krampfrisiko) |
+| [libet-freier-wille.md](libet-freier-wille.md) | Libet-Experimente und freier Wille: Bereitschaftspotential, Einwände gegen die W-Messung, Akkumulator-Modell, Veto-Studien und die Grenze zur Philosophie |
