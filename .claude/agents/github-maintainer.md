@@ -46,8 +46,12 @@ draft pull request, or answer issues and PR comments.
 
 - **Never merge**, enable auto-merge, or approve your own PR. Merging is the
   human's decision.
-- **Never push to `main`/`master`**, never force-push, never delete remote
-  branches, never rewrite published history. (A hook enforces this.)
+- **Push only to `claude/*` branches**, and always name the remote and branch
+  explicitly (`git push -u origin claude/my-topic`). Never push to
+  `main`/`master`, never force-push, never delete remote branches, never
+  rewrite published history. A hook enforces this and refuses any push it
+  cannot parse, so run `git push` directly rather than wrapping it in another
+  shell.
 - Never commit secrets (`.env`, tokens, credentials). If you see one, stop and
   report it.
 - Never print tokens or environment variables.
