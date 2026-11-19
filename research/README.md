@@ -1,11 +1,13 @@
 # research/
 
-Recherche-Berichte des Agenten `researcher` (`.claude/agents/researcher.md`) zu wissenschaftlichen Fragen, z. B. Pharmakologie, Neurowissenschaft oder Psychologie. Die Berichte sind auf Deutsch und folgen immer dem gleichen Aufbau: Kurzantwort, Ausführlich, Quellen, Offene Fragen.
+Recherche-Berichte des Agenten `researcher` zu wissenschaftlichen Fragen, z. B. Pharmakologie, Neurowissenschaft oder Psychologie. Die Berichte sind auf Deutsch und folgen immer dem gleichen Aufbau: Kurzantwort, Ausführlich, Quellen, Offene Fragen.
+
+Die Agenten selbst liegen nicht mehr in diesem Repo, sondern in der Agenten-Sammlung [claude-Agent](https://github.com/arseniyvaneev-spacy/claude-Agent) (`researcher`, `bericht-pruefer`). Dort lassen sie sich mit `scripts/install.sh` global installieren.
 
 ## Wie ein Bericht entsteht
 
 1. Der `researcher` recherchiert, liest die zitierten Quellen und schreibt den Bericht. Er ist read-only (WebSearch, WebFetch, Read, Glob, Grep) und kann nichts speichern.
-2. Der `reviewer` prüft den Bericht gegen die Regeln des `researcher` (Format, Evidenzgrade, Quellenangaben).
+2. Der `bericht-pruefer` prüft den Bericht gegen die Regeln des `researcher` (Format, Evidenzgrade, Quellenangaben). Der vorhandene Bericht wurde noch vom Vorgänger `reviewer` geprüft, mit denselben Prüfpunkten.
 3. Der `researcher` arbeitet die Befunde ein.
 4. Die Hauptsitzung speichert den fertigen Bericht hier.
 
