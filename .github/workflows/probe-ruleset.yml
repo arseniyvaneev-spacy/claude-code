@@ -1,0 +1,14 @@
+# PROBE für Required Status Checks – nicht mergen.
+# Verstößt absichtlich gegen die Härtungsregeln (kein Firewall-Runner, kein
+# --permission-mode auto), damit "Check security settings" rot wird.
+# Läuft nie: nur workflow_dispatch, und das nur auf dem Default-Branch.
+name: PROBE (nicht mergen)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anthropics/claude-code-action@0000000000000000000000000000000000000000
